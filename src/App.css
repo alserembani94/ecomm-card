@@ -1,0 +1,78 @@
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+#book-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+#card-wrapper {
+  height: 200px;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+#card-image {
+  width: 120px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+}
+
+#card-info {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#card-cta {
+  width: 40px;
+}
+
+#card-title {
+  font-weight: bold;
+}
+
+#card-feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#card-feedback > div,
+#card-feedback > button {
+  border: 1px solid black;
+  width: fit-content;
+  padding: 4px 12px;
+  border-radius: 31px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+#card-bookmark {
+  box-sizing: border-box;
+  background-color: #2a2c2e;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 100%;
+}
+
+#card-price {
+  all: unset;
+  font-size: 1.5rem;
+}
